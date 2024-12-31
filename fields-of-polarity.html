@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fields.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <title>Fields of Polarity</title>
+</head>
+<body>
+    <div class="sidebar-group">
+        
+        <div class="sidebar">
+
+            <div class="title-bar title">Personal Log
+                <div class="right">x</div>
+                <div class="right">-</div>
+            </div>
+            
+            <div class="inner">
+                <p>It's easier this way.<br>I will not forget if there are records.</p>
+                <p> 📌<span id="info-button"><u style="cursor: pointer;">Guide</u></span></p>
+                <button class="solve-btn" disabled id="puzzles">Solve Problem</button>
+            </div>
+
+        </div>
+
+        <div class="down">
+
+            <div class="title-bar title">References
+                <div class="right">x</div>
+                <div class="right">-</div>
+            </div>
+
+            <div class="inner" id="info-content">
+                <p>-- The references bot is here to help! --</p>
+            </div>
+
+        </div>
+
+        <div id="info-popup">
+            <div id="popup-content">
+                <span id="close-popup">✖</span>
+                <h2 style="font-family: 'Black Ops One'; letter-spacing: 2px; text-align: center;">Fields of Polarity</h2>
+                <h3 style="font-family: 'Black Ops One'; letter-spacing: 2px; text-align: center;">National Astronauts Institute Simulation Lab - 01</h3>
+                <p>Congratulations cadet! You've been selected to participate in the Planetary Travel Emergencies Simulation - a critical step in completing your certification for Course PF21: Planetary Travel Emergencies.</p>
+                <p>As space exploration evolves, the ability to handle unexpected situations in foreign planets is vital for every astronaut.</p>
+                <p>This simulation is designed to replicate what Dr Dave Morgan experienced on planet Solaria. Your mission is to complete this game as he did and bring your team back home to Earth.</p>
+                    
+                <ul>
+                    <li>The References Bot is your friend! Click on highlighted text to get more information. The Bot will also provide you with important context and Dr Morgan's thoughts from later interviews.</li>
+                    <li>Refreshing the game will bring you back to point zero.</li>
+                    <li>Watch out for when the 'Solve Problem' button becomes active. You must solve the problem to proceed further.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="box" id="attach-content">
+
+        <div class="box-title-bar title" >Day One
+            <div class="right">x</div>
+            <div class="right">-</div>
+        </div>
+    
+        <div class="inner" id="add-content">
+            <p>
+                <strong class="time">10:39 am</strong>
+                <br>
+                I'm confused...
+                <br>
+                <span onclick="teamInfo()" class="references">They</span> say they are my team. That I am their leader.
+                <br>
+                Why do I not remember?
+            </p>
+
+            <p>
+                <strong class="time">11:10 am</strong>
+                <br>
+                Brian says I should go back to sleep. But I've slept for 3 days. Probably more. They only managed to pull me out of the debris after 27 hours.
+                <br>
+                Tina gave me a bag - says it's my stuff. There's <span onclick="bagInfo()" class="references">a lot in it.</span> A keychain that says 'Mark & Mia'.
+                <br>
+                I don't remember what it's for. I don't remember anything.
+            </p>
+
+            <p>
+                <strong class="time">1:45 pm</strong>
+                <br>
+                We had lunch together. They told me about the accident. And the <span onclick="projectInfo()" class="references">project</span>.
+                <br>
+                The team is stuck in <span onclick="solariaInfo()" class="references">Solaria</span> because of me. I caused the accident.
+                <br>
+                Solaria's magnetic field has gone haywire - we can't communicate with Earth.
+            </p>
+            
+            <p>
+                <strong class="time">4:00 pm</strong>
+                <br>
+                I checked out the lab. It's a mess. The team have been trying to fix things. 
+                <br>
+                I wrote in a <span onclick="journalInfo()" class="references">journal</span> while I was stuck in the lab. It may be the key to the portal. But it's illegible. I must've been in a hurry.
+                <br>
+                They want to go <span onclick="homeInfo()" class="references">home.</span> I think a portal is our best chance.
+            </p>
+            
+            <p>
+                <strong class="time">6:18 pm</strong>
+                <br>
+                I've run calculations. I can fix the lab. The journal may have some clues. A portal can get everyone back home. But they're against it.
+                <br>
+                <span onclick="impInfo()" class="references">This research is not important to them. It is to me.</span>
+            </p>
+            
+            <p>
+                <strong class="time">11:11 pm</strong>
+                <br>
+                Mark and Mia...Samuel says they're my kids. How can I not remember them?
+                <br>
+                He says I should forget about the portal and work on getting home to them. But he could be lying - trying to stop me from continuing this research.
+            </p>
+
+        </div>
+        <button id="nextDayBtn" onclick="nextDay()">Next day</button>
+    </div>
+            
+    <div class="wide-sidebar">
+
+        <div class="title-bar title">Information
+            <div class="right">x</div>
+            <div class="right">-</div>
+        </div>
+        
+        <div class="inner">
+            <p> 📌<span id="help-button"><u style="cursor: pointer;">Help</u></span> 📌<a href="https://github.com/vams-skn/fields-of-polarity" target="_blank">GitHub</a></p>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/days.js"></script>
+    <script type="text/javascript" src="./js/game.js"></script>
+</body>
+</html>
